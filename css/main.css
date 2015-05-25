@@ -113,17 +113,20 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+body {
+    background: url('../img/background.jpg');
+}
 /* Header*/
+#header-gridzilla {
 
+}
 h1.logo{
-    text-indent:-2200px;
     height: 0;
     margin: 0;
 }
 a.logo{
-    background: no-repeat 0 1.6875em url('../img/gridzilla.png');
-    height: 5.875em;
+    background: no-repeat 0 27px url('../img/gridzilla.png');
+    height: 94px;
     display: block;
 }
 .col-search{
@@ -145,7 +148,7 @@ a.logo{
     text-transform: uppercase;
     border:0;
     border-radius: 0;
-    background-color: #fff;
+    background-color: inherit;
 }
 .navbar-gridzilla a{
     color: #464b5d;
@@ -156,15 +159,22 @@ a.logo{
     font-family: 'helveticaneue';
     font-weight: normal;
 }
-.navbar-gridzilla a:hover{
+.navbar-gridzilla a{
+    border-right: 1px solid #ececec;
+    padding: 0px 15px !important;
+    margin: 10px 0 !important;
+}
+.navbar-gridzilla li:hover a{
     color: #f03c3c !important;
-    border-top: 1px solid #f03c3c;
-    margin-top: -1px;
+    
     font-family: 'helveticaneue';
     font-weight: bold;
-    background-color: #fff !important;
+    background-color: inherit; !important;
 }
-
+.navbar-gridzilla li:hover{
+    border-top: 1px solid #f03c3c;
+    margin-top: -1px;
+}
 /* article*/
 
 .blog-title{
@@ -173,8 +183,8 @@ a.logo{
 }
 
 .breadcrumb-gridzilla{
-    padding: 0;
-    background-color: #fff;
+    padding: 0 15px;
+    background-color: inherit;
     text-transform: uppercase;
     font: 14px #000 'helveticaneue';
     font-weight: normal;
@@ -191,40 +201,40 @@ a.logo{
 
 /* Article_post*/
 .post{
-    padding-bottom: 10px;
+    padding-bottom: 0 10px 10px 10px;
 }
-.post-img img{
+.post-imgWrapper img{
     width: 100%;
 }
 .post-hover:hover{
     background-color: rgba(0, 0, 0, 0.75);
     height: 100%;
 }
-.post-text{
+.post-content{
     border: 1px solid #ccc;
     border-top: 0;
 }
-.post-text h3{
+.post-content h3{
     margin: 0;
     padding: 10px 0 5px 0;
     font-size: 18px;
     font-weight: bold;
 }
-.post-text>span {
+.post-content>span {
     color: #8a8a8a;
     font-size: 11px;
     font-weight: normal;
 }
-.post-text p{
+.post-content p{
     overflow: hidden; 
     padding: 5px;
     height: 8em;
 }
-.post-text a{
+.post-content a{
     display: inline-block;
     color: inherit;
 }
-.post-text a:before{
+.post-content a:before{
     content: '';
     background: no-repeat url(../img/link-arrow.png);
     display: inline-block;
