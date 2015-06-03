@@ -204,9 +204,9 @@ input.form-control-gridzilla::-moz-placeholder {
 
 .blog-title{
     text-align: center;
-    font: 30px #000 'chunkfiveroman';
+    font: 30px 'chunkfiveroman';
     font-weight: normal;
-    margin-bottom: 35px;
+    margin-bottom: 39px;
 }
 
 .breadcrumb-gridzilla{
