@@ -178,7 +178,7 @@ input.form-control-gridzilla::-moz-placeholder {
 .navbar-collapse-gridzilla{
     padding: 0;
     border-top: 1px solid #ececec;
-    font-family: 'helveticaneuemedium';
+    font-family: 'helveticaneuebold';
 }
 .navbar-nav-gridzilla li a{
     border-right: 1px solid #ececec;
@@ -196,7 +196,6 @@ input.form-control-gridzilla::-moz-placeholder {
 .navbar-gridzilla li:hover a,
 .navbar-gridzilla li:hover a:hover{
     color: #f03c3c;
-    font-family: 'helveticaneuebold';
 }
 .navbar-gridzilla li:hover{
     border-top: 1px solid #f03c3c;
@@ -219,6 +218,10 @@ input.form-control-gridzilla::-moz-placeholder {
 }
 .breadcrumb-gridzilla a{
     color: inherit;
+}
+.breadcrumb-gridzilla a:hover{
+    text-decoration: none;
+    color: #f03c3c;
 }
 .breadcrumb > li + li:before {
   color: #000;
